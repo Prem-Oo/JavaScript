@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        const size=5;
+        let arr=[];
+        for(let i=0;i<size;i++){
+              arr[i]= parseInt( prompt("Enter array element:"+(i+1)));
+        }
+        let oddSum=0,evenSum=0,sum=0;
+        let ecount=ocount=0;
+        for(let i=0;i<size;i++){
+            sum+=arr[i];
+            if(i%2===0){
+                oddSum+=arr[i];
+                ocount++;}
+            else{
+                evenSum+=arr[i];
+                ecount++;
+            }
+        }
+        let gcd,num;
+        if(oddSum>evenSum)
+            num=evenSum;
+        else
+            num=oddSum;
+        for(let i=num;i>=1;i--){
+            if(oddSum%i===0 && evenSum%i===0 ){
+                gcd=i;
+                break;
+            }
+        }
+       document.write("Difference="+Math.abs(oddSum-evenSum)+"<br/>");
+        document.write("Odd Elements ="+ ocount + "<br/>" );
+         document.write("Even Elements ="+ ecount + "<br/>");
+          document.write("Average ="+sum/size + "<br/>");
+           document.write("GCD="+gcd);
+
+       
+            
+    </script>
+</body>
+</html>

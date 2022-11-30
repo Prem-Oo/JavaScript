@@ -1,0 +1,32 @@
+ <!-- 4. Write a JavaScript program to take an array as input from the user and:
+ a) Store all duplicate elements in a separate array
+ b) Remove the duplicate elements from the original array -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   
+    <title>Question-4</title>
+ </head>
+ <body>
+    <script>
+        const size = 7;
+            let arr = [];
+            let arr2=[];
+            for (let i = 0; i < size; i++)
+                arr[i] = parseInt(prompt("Enter array1 element:" + (i + 1)));
+          for(let i=0;i<size;i++){
+            for(let j=i+1;j<size;j++){
+                if(arr[i]===arr[j]){
+                    arr2.push(arr[i]);
+                    arr.splice(j,1);
+                }
+            }
+          }
+         
+            document.write("Duplicate elements = ["+arr2+"] <br/>");
+             document.write("Array without duplicate elements = ["+arr +"]"+ "<br/>");
+    </script>
+    
+ </body>
+ </html>
