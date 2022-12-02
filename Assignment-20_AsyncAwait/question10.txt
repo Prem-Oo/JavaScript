@@ -1,0 +1,9 @@
+ 10). In which scenarios would you use synchronous code instead of asynchronous code?
+
+ans:
+
+Synchronous programming is a better fit for Sequential tasks, where stopping the entire program to wait for a network request or disk IO makes sense.
+Synchronous programming is by far the simplest and easier.
+
+Use synchronous programming when your project focuses on a single task or tasks that are highly dependent and cannot run in parallel.
+ eg:Web Pages,Video Rendering.

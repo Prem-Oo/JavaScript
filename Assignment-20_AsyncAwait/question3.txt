@@ -1,0 +1,6 @@
+3). Give 3 real world examples where async/await has been used?
+
+1.Verify the username and password of a user.
+2.Get application roles for the user.
+3.Log application access time for the user.
+

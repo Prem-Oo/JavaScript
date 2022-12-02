@@ -1,0 +1,7 @@
+// 9). What is the best way to avoid deadlocks when using async/await?
+
+A deadlock is a condition where a process is unable to continue because it is waiting for an event that will never happen.
+In JavaScript, this can happen when two or more threads are waiting for each other to release a lock.
+
+Thread deadlock occurs when multiple threads require the same locks but are not in sync in order to access them.
+Deadlock can be avoided by eliminating all four required conditions: mutual exclusion, hold and wait, no preemption, and circular wait.
